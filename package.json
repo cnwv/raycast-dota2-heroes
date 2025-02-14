@@ -3,12 +3,9 @@
   "name": "dota-2-heroes",
   "title": "Dota 2 Heroes",
   "description": "Browse and search Dota 2 heroes",
-  "icon": "dota-logo.svg",
-  "author": "@bezonmax",
+  "icon": "dota-logo.png",
+  "author": "bezonmax",
   "categories": ["Fun", "Games"],
-  "contributors": [
-    "github.com/cnwv"
-  ],
   "keywords": [
     "dota",
     "dota2",
