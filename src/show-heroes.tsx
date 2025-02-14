@@ -32,10 +32,10 @@ export default function Command() {
       try {
         const response = await fetch("https://api.opendota.com/api/heroStats");
         const data = await response.json();
-        if (Array.isArray(data) && data.every(item => 
-          typeof item.id === 'number' && 
-          typeof item.localized_name === 'string'
-        )) {
+        if (
+          Array.isArray(data) &&
+          data.every((item) => typeof item.id === "number" && typeof item.localized_name === "string")
+        ) {
           setHeroes(data as Hero[]);
         }
       } catch (error) {
@@ -91,10 +91,7 @@ export default function Command() {
           icon={{ source: `${STEAM_CDN_URL}${hero.icon}` }}
           title={hero.localized_name}
           subtitle={hero.roles.join(", ")}
-          accessories={[
-            { text: hero.primary_attr.toUpperCase() },
-            { text: hero.attack_type }
-          ]}
+          accessories={[{ text: hero.primary_attr.toUpperCase() }, { text: hero.attack_type }]}
           actions={
             <ActionPanel>
               <Action title="Show Details" onAction={() => setSelectedHero(hero)} />
@@ -104,4 +101,4 @@ export default function Command() {
       ))}
     </List>
   );
-} 
+}
