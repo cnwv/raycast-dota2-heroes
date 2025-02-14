@@ -1,11 +1,21 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "dota2-heroes",
+  "name": "dota-2-heroes",
   "title": "Dota 2 Heroes",
   "description": "Browse and search Dota 2 heroes",
-  "icon": "dota2-icon.png",
-  "author": "your-username",
+  "icon": "dota-logo.svg",
+  "author": "github.com/cnwv",
   "categories": ["Fun", "Games"],
+  "contributors": [
+    "github.com/cnwv"
+  ],
+  "keywords": [
+    "dota",
+    "dota2",
+    "heroes",
+    "games",
+    "gaming"
+  ],
   "license": "MIT",
   "commands": [
     {
